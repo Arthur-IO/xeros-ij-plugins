@@ -1,0 +1,35 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.xeros.plugins</id>
+
+    <name>Xeros IJ</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="xeros@xeros" url="https://xeros.com">Xeros</vendor>
+
+    <description><![CDATA[A set of plugins that assist in Xeros development]]></description>
+
+    <!-- Needs access to the intellij java dependency -->
+    <depends>com.intellij.java</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>com.xeros.plugins.converters.NPCIdConverter</className>
+            <category>Xeros intentions</category>
+        </intentionAction>
+        <intentionAction>
+            <className>com.xeros.plugins.converters.ItemIdConverter</className>
+            <category>Xeros intentions</category>
+        </intentionAction>
+        <intentionAction>
+            <className>com.xeros.plugins.converters.ObjectIdConverter</className>
+            <category>Xeros intentions</category>
+        </intentionAction>
+    </extensions>
+
+
+    <actions>
+
+    </actions>
+</idea-plugin>
