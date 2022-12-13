@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.xeros:xeros-library:1.14.05")
+    implementation("io.xeros:xeros-library:1.14.09")
 }
 
 // Configure Gradle IntelliJ Plugin
